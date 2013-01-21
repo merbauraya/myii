@@ -1,0 +1,20 @@
+<?php $this->widget('zii.widgets.grid.CGridView', array(
+	'dataProvider'=>InvoiceItem::model()->findByInvoice($invoiceID),
+	'columns'=>array(
+		'id',
+		'invoice_id',
+		'inventory_id',
+		
+	/* Action BUttons */
+	array(
+		'class'=>'CButtonColumn',
+		'template'=> '{edit} {delete} {copy}',
+		'buttons'=>array(
+                        'copy' => array(
+                                'label'=>'Copy', // text label of the button
+                                'url'=>"CHtml::normalizeUrl(array('copy', 'id'=>\$data->id))",
+                                'imageUrl'=>'/path/to/copy.gif',  // image URL of the button. If not set or false, a text link is used
+                                'options' => array('class'=>'copy'), // HTML options for the button
+                        ),
+	))
+))); ?>

@@ -1,0 +1,107 @@
+
+h6.form-title {
+    background: none repeat scroll 0 0 #2C8CDD;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0.75em 1em;
+}
+
+div.form-wrapper {
+	border: 1px solid #F5F5F5;
+    padding: 10px;
+	padding-top:20px;
+	background-color: #FAFAFA;
+	
+}
+.loading {
+	background: url("../images/loading.gif") no-repeat scroll 0 0 transparent;	
+}
+div.form-wrapper {
+	padding-top:20px;
+    
+}
+div.tb-multirow > input[type="text"] , select {
+	font-size: 0.95em !important;
+	line-height: 25px !important;
+	height: 25px !important;
+	margin-bottom: 0.3em !important;
+}
+div.tb-multirow input[type="text"]
+{
+	font-size: 0.95em !important;
+	height: 25px !important;
+	line-height: 25px !important;
+	margin-bottom: 0.3em !important;
+}
+div.tb-multirow table.templateFrame{
+	font-size:0.8em;
+	border-top:1px solid #e5eff8;
+	border-right:1px solid #e5eff8;
+	margin:1em auto;
+	border-collapse:collapse;
+}
+div.tb-multirow table.templateFrame td {
+	color:#678197;
+	border-bottom:1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding: 0.3em 0.3em 0.3em 0.3em;
+	padding-bottom: 0.3em !important;
+	text-align:center;
+	}		
+div.tb-multirow table.templateFrame td tr {
+	height: 30px !important;
+}			
+div.tb-multirow table.templateFrame th {
+	font-weight:normal;
+	color: #678197;
+	text-align:left;
+	border-bottom: 1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.3em 0.3em;
+	}		
+	
+div.tb-multirow table.templateFrame thead th {
+	background:#f4f9fe;
+	text-align:center;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	/*font:bold 1.2em/2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;*/
+	color:#66a3d3
+	}		
+
+textarea.template {
+	display: none;
+}
+div.add {
+	cursor: pointer;
+	width: 60px;
+	padding: 2px;
+	/*border: 1px solid #cccccc;*/
+	color: #0088cc;
+	text-align: center;
+}
+img.remove {
+	cursor: pointer;
+	/*width: 60px;
+	padding: 2px;
+	border: 1px solid #cccccc;
+	color: #0088cc;
+	text-align: center;*/
+}
+
+/* custom icon */
+.myicon-rm{
+	background-image: url("../images/rm.png")
+}
+[class^="myicon-"]{
+	height:14px;
+	line-height:14px;
+	width:14px;
+	margin-top:1px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+/* end custom icon */

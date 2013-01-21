@@ -1,0 +1,90 @@
+/*
+ * IVORY Framework
+ *
+ * A simple, flexible, powerful and fully responsive grid based front-end web framework 
+ * makes your web development faster and easier, & it takes you all the way from 1200px on down to 320px.
+ *
+ * Developed by Lakshmikanth Vallampati - kanth.vallampati@gmail.com
+ * Licensed under GPLv2
+ * 
+ */
+
+/* ---------------------------------------- HTML RESET ----------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, label, legend { display: block; }
+body { line-height: 1; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* --------------------------------------- Clearfixes ------------------------------------------ */
+.gridrow:before,.gridrow:after,.clearfix:before,.clearfix:after{content:'';display:table}
+.gridrow:after,.clearfix:after{clear:both}
+.gridrow,.clearfix{zoom:1}
+
+/* --------------------------------------- GRID Layout ----------------------------------------- */
+*{box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+body{background-color: #f3faff; margin:0 auto;}
+.grid{margin:0 auto;max-width:1200px;width:100%;} /* You can choose the grid 1200 or 1140 or 1024 or 960 as per your requirement */
+.g1140{margin:0 auto;max-width:1140px;width:100%;}
+.g1024{margin:0 auto;max-width:1024px;width:100%;}
+.g960{margin:0 auto;max-width:960px;width:100%;}
+.gridrow{width:100%; margin: 0 auto;}
+.c1{width:8.33%}
+.c2{width:16.66%}
+.c3{width:25%}
+.c4{width:33.33%}
+.c5{width:41.66%}
+.c6{width:50%}
+.c7{width:58.33%}
+.c8{width:66.66%}
+.c9{width:75%}
+.c10{width:83.33%}
+.c11{width:91.66%}
+.c12{width:100%}
+.c1-5{width:20%}/* This column can be used as a one fifth of the row */
+.c1-8{width:12.5%}/* This column can be used as a one eigth of the row */ 
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12,.c1-5,.c1-8 {min-height:1px; float:left; padding-left:10px; padding-right:10px; position:relative}
+.gridrow .gridrow{margin-left:-10px;}
+
+.center_wrapper {
+	margin-top:30px;
+	clear: both;	
+	margin-left: 50% auto;
+	margin-right: 50% auto;
+}
+/* =Media query for 960 Screens - sets nested grids to 100%
+-------------------------------------------------------------- */
+@media only screen and (max-width:960px){
+.gridrow .gridrow .c1,.gridrow .gridrow .c2,.gridrow .gridrow .c3,.gridrow .gridrow .c4,.gridrow .gridrow .c5,.gridrow .gridrow .c6,.gridrow .gridrow .c7,.gridrow .gridrow .c8,.gridrow .gridrow .c9,.gridrow .gridrow .c10,.gridrow .gridrow .c11,.gridrow .gridrow .c12,.gridrow .gridrow .c1-5,.gridrow .gridrow .c1-8{width:100%;margin-bottom:20px;margin-left:0px;margin-right:0px; }
+.gridrow .gridrow > div:last-child{margin-bottom:0 !important}
+}
+
+/* =Media query for iPad and tablets
+-------------------------------------------------------------- */
+@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation:portrait){
+body{font-size:90%}
+.gridrow{margin-bottom:0!important}
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12,.c1-5,.c1-8{width:100%;margin-right:0;margin-left:0;margin-bottom:20px}
+}
+/*
+
+Misc
+
+*/
+.space-top { margin-top: 20px; }
+.space-bot { margin-bottom: 20px; }
+.space-htop { margin-top: 10px; }
+.space-hbot { margin-bottom: 10px; }
+
+
+#footer
+{
+	padding: 10px;
+	margin: 10px 20px;
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+}

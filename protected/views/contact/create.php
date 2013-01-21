@@ -1,0 +1,19 @@
+<?php
+/* @var $this ContactController */
+/* @var $model Contact */
+
+$this->breadcrumbs=array(
+	'Contacts'=>array('index'),
+	'Create',
+);
+
+$this->menu=array(
+	array('label'=>'List Contact', 'url'=>array('index')),
+	array('label'=>'Manage Contact', 'url'=>array('admin')),
+);
+?>
+
+<h6 class="form-title">Create Contact</h6>
+<div class="form-wrapper">
+	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+	</div>
